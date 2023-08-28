@@ -1,5 +1,5 @@
 public class LinkedStack<T> {
-    Node firstNode;
+    Node firstNode; // comment
     LinkedStack(){
         firstNode = null;
     }
