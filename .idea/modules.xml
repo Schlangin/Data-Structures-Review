@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Data-Structures-Review.iml" filepath="$PROJECT_DIR$/.idea/Data-Structures-Review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedPriorityQueuesecondAttempt/LinkedPriorityQueuesecondAttempt.iml" filepath="$PROJECT_DIR$/LinkedPriorityQueuesecondAttempt/LinkedPriorityQueuesecondAttempt.iml" />
     </modules>
   </component>
 </project>
