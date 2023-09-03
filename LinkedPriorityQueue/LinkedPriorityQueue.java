@@ -15,30 +15,30 @@ public class LinkedPriorityQueue<T extends Comparable<T>>{
             lastNode = newNode;
             return;
         }
-        if(anEntry.compareTo(firstNode.data) > 0){ // Checks if the firstNode is the one that needs to be changed.
+        if(firstNode.data.compareTo(anEntry) > 0){ // Checks if the firstNode is the one that needs to be changed.
             newNode.next = firstNode;
             firstNode = newNode;
             return;
         }
         Node iterator;
         for(iterator = firstNode; iterator!=null;iterator=iterator.next){
-           if(anEntry.compareTo(iterator.data) > 0){ // checks if middle of list needs to be changed
+           if(anEntry.compareTo(iterator.data) < 0){ // checks if middle of list needs to be changed
                newNode.next = iterator.next;
                iterator.next = newNode;
                return;
            }
         }
-        if (iterator == null){
+        if (iterator.next == null){
             lastNode.next = newNode;
             lastNode = newNode; // Update lastNode if newNode is the new last node
         }
     }
-    public T remove(){
-
-    }
-    public T peek(){
-
-    }
+//    public T remove(){
+//
+//    }
+//    public T peek(){
+//
+//    }
     public boolean isEmpty(){
         if(firstNode == null || lastNode == null){
             return true;

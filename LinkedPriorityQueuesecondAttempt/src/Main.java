@@ -7,7 +7,6 @@ public class Main {
         wordQueue.add("grape");
         wordQueue.add("orange");
         wordQueue.add("kiwi");
-
         System.out.println("Priority Queue contents:");
         System.out.println(wordQueue);
     }
