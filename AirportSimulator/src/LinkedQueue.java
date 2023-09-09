@@ -1,55 +1,61 @@
-public class LinkedQueue {
-    private Node firstNode;
-    private Node lastNode;
-    LinkedQueue(){
+public class LinkedQueue<T> {
+    private Node<T> firstNode;
+    private Node<T> lastNode;
+
+    public LinkedQueue() {
         firstNode = null;
         lastNode = null;
     }
-    public void enqueue(String anEntry) {
-        Node newNode = new Node(anEntry);
-        if(isEmpty()){
+
+    public void enqueue(T anEntry) {
+        Node<T> newNode = new Node<>(anEntry);
+        if (isEmpty()) {
             firstNode = newNode;
             lastNode = newNode;
-        }else {
+        } else {
             lastNode.next = newNode;
             lastNode = newNode;
         }
     }
-    public void dequeue(){
-        if(isEmpty()){
-            throw new IllegalArgumentException("QUEUE IS EMPTY CANT DEQUEUE");
+
+    public void dequeue() {
+        if (isEmpty()) {
+            throw new IllegalArgumentException("QUEUE IS EMPTY, CANNOT DEQUEUE");
         }
         firstNode = firstNode.next;
     }
-    public String peek(){
-        if(isEmpty()){
+
+    public T peek() {
+        if (isEmpty()) {
             throw new IllegalArgumentException("QUEUE IS EMPTY");
         }
         return firstNode.data;
     }
-    public boolean isEmpty(){
-        if(firstNode == null || lastNode == null){
-            return true;
-        }
-        return false;
+
+    public boolean isEmpty() {
+        return firstNode == null || lastNode == null;
     }
-    public int size(){
+
+    public int size() {
         int counter = 0;
-        for(Node iterator = firstNode; iterator != null; iterator=iterator.next){
+        for (Node<T> iterator = firstNode; iterator != null; iterator = iterator.next) {
             counter++;
         }
         return counter;
     }
-    public void printList(){
-        for(Node iterator = firstNode; iterator != lastNode.next;iterator=iterator.next){
+
+    public void printList() {
+        for (Node<T> iterator = firstNode; iterator != lastNode.next; iterator = iterator.next) {
             System.out.println(iterator.data);
         }
     }
 }
-class Node{
-    Node next = null;
-    String data;
-    Node(String d){
+
+class Node<T> {
+    Node<T> next = null;
+    T data;
+
+    Node(T d) {
         data = d;
     }
 }
