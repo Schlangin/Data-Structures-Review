@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AirportSimulator/AirportSimulator.iml" filepath="$PROJECT_DIR$/AirportSimulator/AirportSimulator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Data-Structures-Review.iml" filepath="$PROJECT_DIR$/.idea/Data-Structures-Review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayBasedHashTable/LinkedHashTable.iml" filepath="$PROJECT_DIR$/ArrayBasedHashTable/LinkedHashTable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedHashTablee/LinkedHashTablee.iml" filepath="$PROJECT_DIR$/LinkedHashTablee/LinkedHashTablee.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkedPriorityQueuesecondAttempt/LinkedPriorityQueuesecondAttempt.iml" filepath="$PROJECT_DIR$/LinkedPriorityQueuesecondAttempt/LinkedPriorityQueuesecondAttempt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/Recursion/Recursion.iml" />
     </modules>
   </component>
 </project>
